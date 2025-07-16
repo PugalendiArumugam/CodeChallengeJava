@@ -1,0 +1,9 @@
+
+Allows an object to notify multiple observers about changes to its state.
+
+The Observer Design Pattern is a behavioral design pattern that defines a one-to-many
+dependency between objects. When one object (the subject) changes state, all its dependents (observers)
+are notified and updated automatically. It primarily deals with the interaction and communication
+between objects, specifically focusing on how objects behave in response to changes in the state of
+other objects.
+
