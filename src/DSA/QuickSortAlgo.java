@@ -13,7 +13,6 @@ public class QuickSortAlgo {
 
         for(int i: array){
             System.out.print(i + " ");
-
         }
     }
 
