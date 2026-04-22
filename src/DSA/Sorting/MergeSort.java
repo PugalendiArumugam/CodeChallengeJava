@@ -1,5 +1,5 @@
 package DSA.Sorting;
-
+//O(n log n)   - Divide and conquer
 public class MergeSort {
     public static void main(String[] args) {
         int[] nums = {64,34,25,12,22,11,5,7,3};
@@ -18,16 +18,19 @@ public class MergeSort {
     }
 
     static void mergeSort(int[]arr, int left, int right){
+        System.out.println("mergeSort "+"left:"+left+" right:"+right);
         if (left<right){
             int mid = (left+right)/2;
             mergeSort(arr, left,mid);
             mergeSort(arr,mid+1, right);
 
-            merge(arr,left, mid, right);
+             merge(arr,left, mid, right);
         }
     }
 
     static void merge(int[] arr, int left, int mid, int right){
+        System.out.println("-------------------------------------------------");
+        System.out.println("Merge "+"left:"+left+" mid:"+mid+" right:"+right);
         int n1 = mid - left + 1;
         int n2 = right - mid;
 
@@ -67,5 +70,10 @@ public class MergeSort {
             j++;
             k++;
         }
+
+        for(int p:arr){
+            System.out.print(p+" ");
+        }
+        System.out.println();
     }
 }

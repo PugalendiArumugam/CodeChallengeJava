@@ -1,6 +1,6 @@
 package DSA.Sorting;
 //O(n log n)   - Divide and conquer - but use pivot element
-public class QuickSort {
+public class QuickSort2 {
     public static void main(String[] args) {
 //        int[] arr = {64,34,25,3,22,11,5,7,12};
         int[] arr = {8,2,4,7,1,3,9,6,5};
@@ -48,15 +48,16 @@ public class QuickSort {
         }
         System.out.println();
         int pivot = arr[high];
-        int i = low;
+        int i = low-1;
         for (int j = low; j < high; j++) {
             if (arr[j] < pivot) {
+                i++;
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
-                i++;
             }
         }
+        i++;
         int temp = arr[i];
         arr[i] = arr[high];
         arr[high] = temp;
