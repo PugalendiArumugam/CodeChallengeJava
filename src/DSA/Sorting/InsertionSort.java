@@ -2,7 +2,7 @@ package DSA.Sorting;
 //O(n²)
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] nums = {64,34,25,12,22,11,5};
+        int[] nums = {64,34,25,67,22,11,5};
         for(int p: nums){
             System.out.print(p+" ");
         }
