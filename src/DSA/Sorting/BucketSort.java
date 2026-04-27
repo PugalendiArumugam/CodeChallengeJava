@@ -41,7 +41,6 @@ public class BucketSort {
         double range = max - min;
         for (double val: arr){
             int bucketIndex = (int) Math.floor((val - min) / range * k);
-//            double temp = (val - min) / range * k;
             if(bucketIndex == k) bucketIndex--;
             buckets.get(bucketIndex).add(val);
         }
