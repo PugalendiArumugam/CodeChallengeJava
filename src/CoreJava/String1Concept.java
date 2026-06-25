@@ -11,5 +11,20 @@ public class String1Concept {
         StringBuilder sbd1 = new StringBuilder("Pugal");
         StringBuilder sbd2 = new StringBuilder("Pugal");
         System.out.println(sbd1.equals(sbd2));
+
+        System.out.println("=".repeat(15));
+
+        String s1 = "hello";
+        String s2 = new String("hello");
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
+        s2=s2.intern();
+        System.out.println(s1==s2);
+
+        System.out.println("=".repeat(15));
+
+
+
+
     }
 }
